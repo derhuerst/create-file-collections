@@ -1,0 +1,26 @@
+{
+  "name": "create-file-collections",
+  "description": "Sort files into collections, e.g. music or documents.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "sort",
+    "files",
+    "collections",
+    "tags",
+    "symlinks"
+  ],
+  "author": "Jannis R <mail@jannisr.de>",
+  "homepage": "https://github.com/derhuerst/create-file-collections",
+  "repository": "derhuerst/create-file-collections",
+  "bugs": "https://github.com/derhuerst/create-file-collections/issues",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+  }
+}
