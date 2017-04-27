@@ -4,7 +4,7 @@ const path = require('path')
 const mkdirp = require('mkdirp')
 const fs = require('fs')
 
-const del = require('./lib/unlink')
+const del = require('../lib/unlink')
 
 const put = (base) => (link, target, cb) => {
 	const src = path.join(base, ...link)
@@ -12,7 +12,10 @@ const put = (base) => (link, target, cb) => {
 	mkdirp(path.dirname(src), (err) => {
 		if (err) return cb(err)
 
-		fs.symlink(target, src, cb)
+		fs.access(src, fs.constants.R_OK, (err, data) => {
+			if (err && err.code === 'ENOENT') return fs.link(target, src, cb)
+			else cb()
+		})
 	})
 }
 

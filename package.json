@@ -5,10 +5,9 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "symlinks.js",
-    "hardlinks.js",
     "tag",
-    "lib"
+    "lib",
+    "apply"
   ],
   "keywords": [
     "sort",
