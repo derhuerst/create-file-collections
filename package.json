@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "async": "^2.3.0",
+    "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",
     "through2": "^2.0.3",
     "vinyl-fs": "^2.4.4"
