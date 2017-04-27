@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "symlinks.js",
+    "hardlinks.js",
+    "lib"
   ],
   "keywords": [
     "sort",
@@ -23,6 +26,7 @@
   },
   "dependencies": {
     "async": "^2.3.0",
+    "mkdirp": "^0.5.1",
     "through2": "^2.0.3",
     "vinyl-fs": "^2.4.4"
   }
